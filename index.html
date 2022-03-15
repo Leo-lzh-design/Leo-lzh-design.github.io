@@ -206,8 +206,44 @@
 
 <p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315111226269.png" alt="image-20220315111226269"></p>
 <h3 id="本地生成博客内容："><a href="#本地生成博客内容：" class="headerlink" title="本地生成博客内容："></a>本地生成博客内容：</h3><p><strong>在电脑随便一个文件夹 右键 gitBash here</strong> 在框中输入以下命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo <span class="comment">#安装hexo</span></span><br><span class="line">hexo g   <span class="comment">#生成</span></span><br><span class="line">hexo s   <span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init  <span class="comment">#初始化hexo</span></span><br><span class="line">npm install -g hexo <span class="comment">#安装hexo</span></span><br><span class="line">hexo g   <span class="comment">#生成</span></span><br><span class="line">hexo s   <span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
 
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315111948116.png" alt="image-20220315111948116"></p>
+<p><strong>静态生成 hexo 本地文件</strong> </p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315112107622.png" alt="image-20220315112107622"></p>
+<p><strong>本地博客页面</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315112142602.png" alt="image-20220315112142602"></p>
+<h3 id="本地博客部署到互联网上："><a href="#本地博客部署到互联网上：" class="headerlink" title="本地博客部署到互联网上："></a>本地博客部署到互联网上：</h3><p><strong>打开 config.yml</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315112511231.png" alt="image-20220315112511231"></p>
+<p><strong>找到deploy 项目 输入以下代码</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy<span class="punctuation">:</span></span><br><span class="line">  type<span class="punctuation">:</span> git</span><br><span class="line">  repository<span class="punctuation">:</span> https<span class="punctuation">:</span><span class="comment">//github.com/Leo-lzh-design/Leo-lzh-design.github.io.git</span></span><br><span class="line">  branch<span class="punctuation">:</span> main</span><br></pre></td></tr></table></figure>
+
+<p><strong>repository 为github仓库地址</strong></p>
+<ul>
+<li><p><strong>安装hexo 部署工具</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install  hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315113049979.png" alt="image-20220315113049979"></p>
+<ul>
+<li>&#96;&#96;&#96;python<br>hexo g #生成页面<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  ![image-20220315113435850](C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315113435850.png)</span><br><span class="line"></span><br><span class="line">- ```python</span><br><span class="line">  hexo d # 本地文件部署到互联网</span><br></pre></td></tr></table></figure>
+
+<img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315113520639.png" alt="image-20220315113520639"></li>
+</ul>
+<p><strong>第一次部署需要输入 登陆github 输入账号和密码即可点击登陆需要输入ssh令牌</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315110219890.png" alt="image-20220315110219890"></p>
+<p><strong>打开Settings 找到Developer settings</strong> </p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315113828870.png" alt="image-20220315113828870"></p>
+<p><strong>重新新建一个令牌</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315113913931.png" alt="image-20220315113913931"></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315113946900.png" alt="image-20220315113946900"></p>
+<p><strong>Select scopes 全部勾选上即可点击生成令牌</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315114111414.png" alt="image-20220315114111414"></p>
+<p><strong>生成的 tokens 粘贴到Open SSH 中即可</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315114210989.png" alt="image-20220315114210989"></p>
+<p><strong>部署完成</strong></p>
+<p><img src="C:\Users\Leo\AppData\Roaming\Typora\typora-user-images\image-20220315114339365.png" alt="image-20220315114339365"></p>
+<p><strong>成功之后可以通过网址来访问了</strong></p>
+<p><a target="_blank" rel="noopener" href="https://leo-lzh-design.github.io/">https://leo-lzh-design.github.io/</a></p>
 
       
 
