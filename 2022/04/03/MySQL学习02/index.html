@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://leo-lzh-design.github.io">
-  <title>我的算法题记录(1)-找出最长的数字串 | 泽华的博客</title>
+  <title>MySQL学习02 | 泽华的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="编写函数，从输入字符串中找出连续最长的数字串，把串以及串长度返回。 ​     输入：Anml168sjxbi123456dknb ​     输出：6 123456   题目分析:1.从键盘输入一串字符，用数组将其存放  2.初始化len[]数组 初始时空间值全部为0。3.根据输入的字符串长度 循环找出其中的数字ASCII码值。4，记录下标存放到len[]数组中若该位置是数字则 len[i]!">
+  <meta name="description" content="2、操作数据库操作数据库 &gt;操作数据库中的表&gt;操作数据库中的表 mysql 关键字不区分大小写 2.1 操作数据库1.创建数据库 1CREATE DATABASE [IF NOT EXISTS]  WESTOS;  2.删除数据库 1DROP DATABASE WESTOS		  3.使用数据库 1USE school-- 切换数据库  4.查看数据库 1SHOW DATABASES">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的算法题记录(1)-找出最长的数字串">
-<meta property="og:url" content="https://leo-lzh-design.github.io/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/index.html">
+<meta property="og:title" content="MySQL学习02">
+<meta property="og:url" content="https://leo-lzh-design.github.io/2022/04/03/MySQL%E5%AD%A6%E4%B9%A002/index.html">
 <meta property="og:site_name" content="泽华的博客">
-<meta property="og:description" content="编写函数，从输入字符串中找出连续最长的数字串，把串以及串长度返回。 ​     输入：Anml168sjxbi123456dknb ​     输出：6 123456   题目分析:1.从键盘输入一串字符，用数组将其存放  2.初始化len[]数组 初始时空间值全部为0。3.根据输入的字符串长度 循环找出其中的数字ASCII码值。4，记录下标存放到len[]数组中若该位置是数字则 len[i]!">
+<meta property="og:description" content="2、操作数据库操作数据库 &gt;操作数据库中的表&gt;操作数据库中的表 mysql 关键字不区分大小写 2.1 操作数据库1.创建数据库 1CREATE DATABASE [IF NOT EXISTS]  WESTOS;  2.删除数据库 1DROP DATABASE WESTOS		  3.使用数据库 1USE school-- 切换数据库  4.查看数据库 1SHOW DATABASES">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-18T08:29:02.000Z">
-<meta property="article:modified_time" content="2022-03-18T09:14:10.400Z">
+<meta property="article:published_time" content="2022-04-03T03:52:08.356Z">
+<meta property="article:modified_time" content="2022-04-03T04:11:46.435Z">
 <meta property="article:author" content="Leo">
 <meta name="twitter:card" content="summary">
   
@@ -154,35 +154,210 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的算法题记录-1-找出最长的数字串" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL学习02" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的算法题记录(1)-找出最长的数字串
+      MySQL学习02
     </h1>
   
 
         
-        <a href="/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/" class="archive-article-date">
-  	<time datetime="2022-03-18T08:29:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-18</time>
+        <a href="/2022/04/03/MySQL%E5%AD%A6%E4%B9%A002/" class="archive-article-date">
+  	<time datetime="2022-04-03T03:52:08.356Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> <strong>编写函数，从输入字符串中找出连续最长的数字串，把串以及串长度返回。</strong></p>
-<p>​     <strong>输入：Anml168sjxbi123456dknb</strong></p>
-<p>​     <strong>输出：6 123456</strong></p>
-<hr>
-<p><font size="4" color="green"> 题目分析:1.从键盘输入一串字符，用数组将其存放
- 2.初始化len[]数组 初始时空间值全部为0。3.根据输入的字符串长度 循环找出其中的数字ASCII码值。4，记录下标存放到len[]数组中若该位置是数字则 len[i]!=0 否则 len[i]=0</font></p>
+        <h3 id="2、操作数据库"><a href="#2、操作数据库" class="headerlink" title="2、操作数据库"></a>2、操作数据库</h3><p>操作数据库 &gt;操作数据库中的表&gt;操作数据库中的表</p>
+<p>mysql 关键字不区分大小写</p>
+<h4 id="2-1-操作数据库"><a href="#2-1-操作数据库" class="headerlink" title="2.1 操作数据库"></a>2.1 操作数据库</h4><p>1.创建数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE [IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>]  WESTOS;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span> </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> i,k,key,sum,max,len[<span class="number">300</span>]; </span><br><span class="line">	<span class="type">char</span> a[<span class="number">300</span>];</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,a);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">300</span>;j++)&#123;		<span class="comment">//初始化长度数组 </span></span><br><span class="line">		len[j]=<span class="number">0</span>;<span class="comment">//初始len[j]全部为0 </span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(a);i++)&#123;	<span class="comment">//strlen(a) a 串的长度 </span></span><br><span class="line">		k=i;<span class="comment">//k为；len[]的下标</span></span><br><span class="line">		sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span>(a[i]&gt;=<span class="string">&#x27;0&#x27;</span> &amp;&amp; a[i]&lt;=<span class="string">&#x27;9&#x27;</span>)&#123;</span><br><span class="line">			i++;</span><br><span class="line">			sum++;</span><br><span class="line">		&#125;</span><br><span class="line">		len[k]=sum;	<span class="comment">//将每个位置出现的数组串长度，保存在len[]中，没出现的为 0 </span></span><br><span class="line">	&#125;</span><br><span class="line">	max=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(a);i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(max&lt;len[i])&#123;<span class="comment">//i 有连续数字， </span></span><br><span class="line">			max = len[i]; <span class="comment">//保存最长的数字串长度 </span></span><br><span class="line">			key = i;	<span class="comment">//记录最长数字串， 初始地址 </span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;max;i++)&#123;	<span class="comment">//从key下标输出，max个数字 </span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,a[key++]);</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\0&quot;</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,max);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>2.删除数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> DATABASE WESTOS		</span><br></pre></td></tr></table></figure>
 
+<p>3.使用数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USE school<span class="comment">-- 切换数据库</span></span><br></pre></td></tr></table></figure>
+
+<p>4.查看数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> DATABASES  <span class="comment">-- 查看所有的数据库</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2数据库的列类型"><a href="#2-2数据库的列类型" class="headerlink" title="2.2数据库的列类型"></a>2.2数据库的列类型</h3><blockquote>
+<p>数值</p>
+</blockquote>
+<ul>
+<li>tinyint  十分小的数据   1个字节</li>
+<li>smallint  较小的数据    2个字节</li>
+<li><strong>int            标准整数       4个字节</strong></li>
+<li>bigint        较大的数据   8个字节</li>
+<li>float          单精度浮点数   4个字节</li>
+<li>double      浮点数               8个字节</li>
+<li>decimal    字符串浮点数    金融计算时使用decimal</li>
+</ul>
+<blockquote>
+<p>字符串</p>
+</blockquote>
+<ul>
+<li>char      字符串固定大小   0~255</li>
+<li><strong>varchar  可变字符串         0~65525</strong></li>
+<li>tinytext  微型文本              2^8-1</li>
+<li><strong>text         文本串                 2^16-1</strong></li>
+</ul>
+<blockquote>
+<p>时间和日期</p>
+</blockquote>
+<p>java.util.data</p>
+<ul>
+<li>data    YYYY-MM-DD ，日期格式</li>
+<li>time   HH:mm:ss           时间格式</li>
+<li><strong>datatime YYYY-MM-DD HH:mm:ss    最常用时间格式</strong></li>
+<li><strong>timestamp 时间戳，1970.1.1 到现在的毫秒数</strong></li>
+<li>year 年份表示</li>
+</ul>
+<blockquote>
+<p>null</p>
+</blockquote>
+<ul>
+<li>不要使用null进行计算，结果为null</li>
+</ul>
+<h3 id="2-3、数据库的字段类型（重要）"><a href="#2-3、数据库的字段类型（重要）" class="headerlink" title="2.3、数据库的字段类型（重要）"></a>2.3、数据库的字段类型（重要）</h3><p><strong>Unsigned:</strong> </p>
+<ul>
+<li>无符号整数</li>
+<li>声明了该列不能声明为负数</li>
+</ul>
+<p><strong>Zerofill:</strong></p>
+<ul>
+<li>0填充</li>
+<li>不足的位数，使用0来填充</li>
+</ul>
+<p><strong>自增auto_increment:</strong></p>
+<ul>
+<li>在上一条记录的基础上+1（默认）</li>
+<li>通常用来设计唯一的主键~index,必须是整数</li>
+<li>可以自定义 步长和起始值</li>
+</ul>
+<p><strong>NOTNULL(非空):</strong></p>
+<ul>
+<li>如果设置为 notnull ，不赋值就会报错</li>
+<li>Null,如果不填写值，默认就是null</li>
+</ul>
+<p><strong>默认：</strong></p>
+<ul>
+<li>设置默认值！</li>
+<li>如果不指定则为默认值</li>
+</ul>
+<h3 id="2-4创建数据库表（重点）"><a href="#2-4创建数据库表（重点）" class="headerlink" title="2.4创建数据库表（重点）"></a>2.4创建数据库表（重点）</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*每一个表，都必须存在的字段，做项目用的</span></span><br><span class="line"><span class="comment">id 主键</span></span><br><span class="line"><span class="comment">‘version’  乐观锁</span></span><br><span class="line"><span class="comment">is_delete  伪删除</span></span><br><span class="line"><span class="comment">gmt_create 创建时间</span></span><br><span class="line"><span class="comment">gmt_update 修改时间</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">-- 建表时 尽量使用 `` 将表名，字段括起来</span></span><br><span class="line"><span class="comment">-- 字符串使用单引号‘’括起来</span></span><br><span class="line"><span class="comment">-- 所有的语句后面加,（英文）最后一个不用加</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> `students` (`students`</span><br><span class="line">	`id` <span class="type">INT</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> AUTO_INCREMENT  COMMENT <span class="string">&#x27;学号&#x27;</span>,</span><br><span class="line">	`name` <span class="type">VARCHAR</span>(<span class="number">30</span>)<span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">&#x27;匿名&#x27;</span> COMMENT <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">	`pwd` <span class="type">VARCHAR</span>(<span class="number">20</span>)<span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">&#x27;123456&#x27;</span> COMMENT <span class="string">&#x27;密码&#x27;</span>,</span><br><span class="line">	`sex` <span class="type">VARCHAR</span>(<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>  <span class="keyword">DEFAULT</span> <span class="string">&#x27;女&#x27;</span> COMMENT <span class="string">&#x27;性别&#x27;</span>,</span><br><span class="line">	`birthday` DATETIME <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;出生日期&#x27;</span>,</span><br><span class="line">	`address` <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;地址&#x27;</span>,</span><br><span class="line">	`email` <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">DEFAULT</span>  <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;邮箱&#x27;</span>,</span><br><span class="line">	<span class="keyword">PRIMARY</span> KEY(`id`)</span><br><span class="line">)ENGINE<span class="operator">=</span>INNODB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>format</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>]`表名`(</span><br><span class="line">	`字段名` 列类型[属性][索引][注释],</span><br><span class="line">    `字段名` 列类型[属性][索引][注释],</span><br><span class="line">    ....</span><br><span class="line">    `字段名` 列类型[属性][索引][注释],</span><br><span class="line"> </span><br><span class="line"><span class="keyword">PRIMARY</span> KEY(`字段名`) <span class="comment">-- 设置主键</span></span><br><span class="line">)[表类型][字符集设置][注释]</span><br></pre></td></tr></table></figure>
+
+<p><strong>常用命令</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--查看创建数据库的语句</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">create</span> database school <span class="comment">--查看创建数据库的语句 school 为数据库名</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">create</span> <span class="keyword">table</span> student <span class="comment">--查看创建表的语句</span></span><br><span class="line"><span class="keyword">DESC</span> student <span class="comment">-- 查看表结构 </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5数据表的类型"><a href="#2-5数据表的类型" class="headerlink" title="2.5数据表的类型"></a>2.5数据表的类型</h3><ul>
+<li><p><strong>关于数据库引擎</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>MYISM</th>
+<th>INNODB</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>事务支持</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>数据行锁</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>外键</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>全文索引</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>表空间大小</td>
+<td>较小</td>
+<td>较大，约为MYISM的2倍</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>常规使用操作：</p>
+<ul>
+<li>MYISM： 节约空间 、速度较快</li>
+<li>INNODB  安全性高，事务的处理，多表多用户操作</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h6 id="在物理空间存在的位置"><a href="#在物理空间存在的位置" class="headerlink" title="在物理空间存在的位置"></a>在物理空间存在的位置</h6></blockquote>
+<ul>
+<li>InnoDB在数据库表中只有一个*.frm文件，以及上级目录下的ibdata1文件</li>
+<li>MYISM 对应的文件<ul>
+<li>*.frm    表结构的定义文件</li>
+<li>*.myd   数据文件Data</li>
+<li>*.myi    索引文件（index）</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h6 id="设置字符集编码"><a href="#设置字符集编码" class="headerlink" title="设置字符集编码"></a>设置字符集编码</h6></blockquote>
+<p>不设置的话，会是mysql默认的字符编码（不支持中文）</p>
+<p>Mysql的默认编码是Latin1</p>
+<p>在my.ini 文件中配置默认的编码</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">character-set-server</span>=utf-<span class="number">8</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-6-修改和删除表"><a href="#2-6-修改和删除表" class="headerlink" title="2.6 修改和删除表"></a>2.6 修改和删除表</h4><blockquote>
+<p>修改表</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--修改表名 ALTER TABLE 旧表名 RENAME AS 新表名</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher RENAME <span class="keyword">as</span> teacher1</span><br><span class="line"><span class="comment">-- 增加表的字段 alter table 表名 add `字段名` 字段属性</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher <span class="keyword">add</span>  age <span class="type">INT</span>(<span class="number">11</span>)</span><br><span class="line"><span class="comment">-- 修改表的字段 (重命名，修改约束)</span></span><br><span class="line"><span class="comment">-- ALTER TABLE 表名 MODIFY  字段名 列属性[]</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher MODIFY  age <span class="type">varchar</span>(<span class="number">11</span>)<span class="comment">-- 修改约束</span></span><br><span class="line"><span class="comment">-- ALTER TABLE 表名 change  旧名字 新名字 列属性</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher change  age  age1 <span class="type">INT</span>(<span class="number">1</span>) <span class="comment">--字段重命名</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>modify</th>
+<th>change</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>修改字段类型和约束</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>重命名</td>
+<td>否</td>
+<td>是</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>删除表</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--刪除表（如果表存在再刪除）</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> teacher1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意点：</strong></p>
+<ul>
+<li>&#96;&#96; 包裹字段名</li>
+<li>注释–</li>
+<li>sql 关键字大小写不敏感</li>
+<li>英文符号</li>
+</ul>
 
       
 
@@ -262,7 +437,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://leo-lzh-design.github.io/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://leo-lzh-design.github.io/2022/04/03/MySQL%E5%AD%A6%E4%B9%A002/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,18 +451,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/04/03/MySQL%E5%AD%A6%E4%B9%A002/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/04/03/MySQL%E5%AD%A6%E4%B9%A001/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          MySQL学习02
+          (no title)
         
       </div>
     </a>
   
   
-    <a href="/2022/03/14/%E5%9F%BA%E4%BA%8EHexo%E5%92%8C%20github%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BAh2center/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的算法题记录(1)-找出最长的数字串</div>
       <i class="icon-circle-right"></i>
     </a>
   

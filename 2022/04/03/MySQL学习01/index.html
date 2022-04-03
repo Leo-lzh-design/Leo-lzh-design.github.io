@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://leo-lzh-design.github.io">
-  <title>我的算法题记录(1)-找出最长的数字串 | 泽华的博客</title>
+  <title>泽华的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="编写函数，从输入字符串中找出连续最长的数字串，把串以及串长度返回。 ​     输入：Anml168sjxbi123456dknb ​     输出：6 123456   题目分析:1.从键盘输入一串字符，用数组将其存放  2.初始化len[]数组 初始时空间值全部为0。3.根据输入的字符串长度 循环找出其中的数字ASCII码值。4，记录下标存放到len[]数组中若该位置是数字则 len[i]!">
+  <meta name="description" content="title:MySQL学习011.1数据库的分类 关系型数据库：行、列   MySQL Oracle Sql Server DB2   非关系型数据库 Redis MongDB 非关系型数据库，对象存储，通过对象的自身属性来决定    DBMS(数据库管理系统) 数据库管理软件，维护和获取数据 MySQL。数据库管理系统  1.4MySQL简介MySQL是一个关系型数据库管理系统是最好的数据库管">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的算法题记录(1)-找出最长的数字串">
-<meta property="og:url" content="https://leo-lzh-design.github.io/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/index.html">
+<meta property="og:title" content="泽华的博客">
+<meta property="og:url" content="https://leo-lzh-design.github.io/2022/04/03/MySQL%E5%AD%A6%E4%B9%A001/index.html">
 <meta property="og:site_name" content="泽华的博客">
-<meta property="og:description" content="编写函数，从输入字符串中找出连续最长的数字串，把串以及串长度返回。 ​     输入：Anml168sjxbi123456dknb ​     输出：6 123456   题目分析:1.从键盘输入一串字符，用数组将其存放  2.初始化len[]数组 初始时空间值全部为0。3.根据输入的字符串长度 循环找出其中的数字ASCII码值。4，记录下标存放到len[]数组中若该位置是数字则 len[i]!">
+<meta property="og:description" content="title:MySQL学习011.1数据库的分类 关系型数据库：行、列   MySQL Oracle Sql Server DB2   非关系型数据库 Redis MongDB 非关系型数据库，对象存储，通过对象的自身属性来决定    DBMS(数据库管理系统) 数据库管理软件，维护和获取数据 MySQL。数据库管理系统  1.4MySQL简介MySQL是一个关系型数据库管理系统是最好的数据库管">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-18T08:29:02.000Z">
-<meta property="article:modified_time" content="2022-03-18T09:14:10.400Z">
+<meta property="article:published_time" content="2022-04-03T03:52:08.363Z">
+<meta property="article:modified_time" content="2022-04-03T04:11:55.033Z">
 <meta property="article:author" content="Leo">
 <meta name="twitter:card" content="summary">
   
@@ -154,35 +154,75 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的算法题记录-1-找出最长的数字串" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL学习01" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      我的算法题记录(1)-找出最长的数字串
-    </h1>
-  
-
-        
-        <a href="/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/" class="archive-article-date">
-  	<time datetime="2022-03-18T08:29:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-18</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> <strong>编写函数，从输入字符串中找出连续最长的数字串，把串以及串长度返回。</strong></p>
-<p>​     <strong>输入：Anml168sjxbi123456dknb</strong></p>
-<p>​     <strong>输出：6 123456</strong></p>
-<hr>
-<p><font size="4" color="green"> 题目分析:1.从键盘输入一串字符，用数组将其存放
- 2.初始化len[]数组 初始时空间值全部为0。3.根据输入的字符串长度 循环找出其中的数字ASCII码值。4，记录下标存放到len[]数组中若该位置是数字则 len[i]!=0 否则 len[i]=0</font></p>
+        <hr>
+<h2 id="title-MySQL学习01"><a href="#title-MySQL学习01" class="headerlink" title="title:MySQL学习01"></a>title:MySQL学习01</h2><h5 id="1-1数据库的分类"><a href="#1-1数据库的分类" class="headerlink" title="1.1数据库的分类"></a>1.1数据库的分类</h5><ul>
+<li>关系型数据库：行、列  <ul>
+<li>MySQL Oracle Sql Server DB2</li>
+</ul>
+</li>
+<li>非关系型数据库<ul>
+<li>Redis MongDB</li>
+<li>非关系型数据库，对象存储，通过对象的自身属性来决定</li>
+</ul>
+</li>
+</ul>
+<h5 id="DBMS-数据库管理系统"><a href="#DBMS-数据库管理系统" class="headerlink" title="DBMS(数据库管理系统)"></a>DBMS(数据库管理系统)</h5><ul>
+<li>数据库管理软件，维护和获取数据</li>
+<li>MySQL。数据库管理系统</li>
+</ul>
+<h4 id="1-4MySQL简介"><a href="#1-4MySQL简介" class="headerlink" title="1.4MySQL简介"></a>1.4MySQL简介</h4><p>MySQL是一个关系型数据库管理系统是最好的数据库管理系统软件之一 </p>
+<p>开源的数据库软件</p>
+<p><strong>优点如下：</strong></p>
+<p>体积小、速度快、软件成本低</p>
+<p>中小型</p>
+<h4 id="1-5-安装MySQL"><a href="#1-5-安装MySQL" class="headerlink" title="1.5 安装MySQL"></a>1.5 安装MySQL</h4><p>1.解压</p>
+<p>2.配置环境 bin目录添加到path 中</p>
+<p>3、新建MySql 配置文件 my.ini</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="comment">#目录换成自己的</span></span><br><span class="line"><span class="attr">basedir</span>=D:\mysql\mysql-<span class="number">8.0</span>.<span class="number">28</span>\</span><br><span class="line"><span class="attr">datadir</span>=D:\mysql\mysql-<span class="number">8.0</span>.<span class="number">28</span>\data\</span><br><span class="line"><span class="attr">port</span>=<span class="number">3306</span></span><br><span class="line"><span class="comment">#跳过验证</span></span><br><span class="line">skip-grant-tables </span><br></pre></td></tr></table></figure>
 
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span> </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> i,k,key,sum,max,len[<span class="number">300</span>]; </span><br><span class="line">	<span class="type">char</span> a[<span class="number">300</span>];</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,a);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">300</span>;j++)&#123;		<span class="comment">//初始化长度数组 </span></span><br><span class="line">		len[j]=<span class="number">0</span>;<span class="comment">//初始len[j]全部为0 </span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(a);i++)&#123;	<span class="comment">//strlen(a) a 串的长度 </span></span><br><span class="line">		k=i;<span class="comment">//k为；len[]的下标</span></span><br><span class="line">		sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span>(a[i]&gt;=<span class="string">&#x27;0&#x27;</span> &amp;&amp; a[i]&lt;=<span class="string">&#x27;9&#x27;</span>)&#123;</span><br><span class="line">			i++;</span><br><span class="line">			sum++;</span><br><span class="line">		&#125;</span><br><span class="line">		len[k]=sum;	<span class="comment">//将每个位置出现的数组串长度，保存在len[]中，没出现的为 0 </span></span><br><span class="line">	&#125;</span><br><span class="line">	max=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(a);i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(max&lt;len[i])&#123;<span class="comment">//i 有连续数字， </span></span><br><span class="line">			max = len[i]; <span class="comment">//保存最长的数字串长度 </span></span><br><span class="line">			key = i;	<span class="comment">//记录最长数字串， 初始地址 </span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;max;i++)&#123;	<span class="comment">//从key下标输出，max个数字 </span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,a[key++]);</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\0&quot;</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,max);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>4.启动管理员模式下的cmd,运行所有的命令</p>
+<ul>
+<li><p>1.安装mysql的服务</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#管理员身份运行cmd,</span></span><br><span class="line">myssqld-install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化数据库文件</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize-insecure <span class="attr">--user</span>=mysql</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动MySQL 修改密码</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start mysql</span><br></pre></td></tr></table></figure>
 
+<ul>
+<li><p>修改密码mysql 8.0</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;123456&#x27;</span>;</span><br><span class="line">flush privileges;<span class="comment">--刷线权限</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>注释掉my.ini 中的跳过密码验证</p>
+</li>
+<li><p>重启 MySQL.l连接测试</p>
+</li>
+</ul>
+<h4 id="1-6-安装SQLyog"><a href="#1-6-安装SQLyog" class="headerlink" title="1.6 安装SQLyog"></a>1.6 安装SQLyog</h4><p>1.无脑安装</p>
+<p>2.注册 社区版不用</p>
+<p>3、连接</p>
+<p>4、新建一个数据库</p>
+<p>5、新建一张表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字段 ：id,name age</span><br></pre></td></tr></table></figure>
+
+<p>6.查看表</p>
+<p>7 添加多条记录</p>
+<h4 id="1-7-链接数据库"><a href="#1-7-链接数据库" class="headerlink" title="1.7 链接数据库"></a>1.7 链接数据库</h4><p>命令行链接</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">mysql <span class="operator">-</span>u root <span class="operator">-</span>p123456 <span class="comment">--</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;123456&#x27;</span>;<span class="comment">--修改用户和密码</span></span><br><span class="line"><span class="comment">-----------------------------------------------------------------------</span></span><br><span class="line"><span class="keyword">show</span> databases; <span class="comment">--查看所有数据库</span></span><br><span class="line">use database;   <span class="comment">--切换数据库 use 数据库名</span></span><br><span class="line"><span class="keyword">show</span> tables; <span class="comment">--查看本数据库中所有的表</span></span><br><span class="line"><span class="keyword">desc</span> student; <span class="comment">--查看表中的信息 describe 表名;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> database oo; <span class="comment">--创建一个数据库</span></span><br><span class="line"></span><br><span class="line">exit; <span class="comment">--退出连接</span></span><br><span class="line"><span class="comment">-- 单行注释</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行</span></span><br><span class="line"><span class="comment">注</span></span><br><span class="line"><span class="comment">释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>数据库xxx语言</strong>CRUD</p>
+<p>DDL   定义</p>
+<p>DML  操作</p>
+<p>DQL  查询</p>
+<p>DCL  控制</p>
 
       
 
@@ -262,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://leo-lzh-design.github.io/2022/03/18/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E8%AE%B0%E5%BD%95-1-%E6%89%BE%E5%87%BA%E6%9C%80%E9%95%BF%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%B2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://leo-lzh-design.github.io/2022/04/03/MySQL%E5%AD%A6%E4%B9%A001/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,18 +316,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/04/03/MySQL%E5%AD%A6%E4%B9%A002/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MySQL学习02
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/03/14/%E5%9F%BA%E4%BA%8EHexo%E5%92%8C%20github%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BAh2center/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2022/04/03/MySQL%E5%AD%A6%E4%B9%A002/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MySQL学习02</div>
       <i class="icon-circle-right"></i>
     </a>
   
